@@ -64,8 +64,6 @@ public class Main {
                 }
             }
 
-//            AND sales.Date BETWEEN '" + sdate + "' AND '" + edate + "' "
-
             System.out.println("Hives in the table:");
             String fetchHives = "SELECT * FROM Hives";
             rs = statement.executeQuery(fetchHives);
@@ -112,7 +110,7 @@ public class Main {
             System.out.println("Total honey harvested by Hive " + hiveString + ": " + hiveHoney);
             System.out.println("Best harvest: " + bestYear + " with " + bestHoney + " lbs harvested");
 
-            // Didn't quite get to this, couldn't figure out how to summate the yearly honey in a single statement
+            // todo Didn't quite get to this, couldn't figure out how to summate the yearly honey in a single statement
 //            String fetchTopYears = "SELECT TOP Honey FROM Hives ORDER BY YEAR(HoneyDate)";
 //            rs = statement.executeQuery(fetchTopYears);
 //            LinkedList topYears = new LinkedList();
