@@ -1,6 +1,7 @@
 package com.jessespalding;
 
 import java.sql.*;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
@@ -110,6 +111,15 @@ public class Main {
             }
             System.out.println("Total honey harvested by Hive " + hiveString + ": " + hiveHoney);
             System.out.println("Best harvest: " + bestYear + " with " + bestHoney + " lbs harvested");
+
+            // Didn't quite get to this, couldn't figure out how to summate the yearly honey in a single statement
+//            String fetchTopYears = "SELECT TOP Honey FROM Hives ORDER BY YEAR(HoneyDate)";
+//            rs = statement.executeQuery(fetchTopYears);
+//            LinkedList topYears = new LinkedList();
+//            while (rs.next()) {
+//
+//            }
+
 
 
         } catch (SQLException se) {
